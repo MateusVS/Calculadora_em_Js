@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<title>Calculadora Humilde</title>
+	<meta name="theme-color" content="black" />
+	<link rel="stylesheet" type="text/css" href="calc.css">
+	<link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+</head>
+<body>
+	<div class="corpo">
+		<form name="calc">
+			<input class="visor" type="text" id="tela" disabled><br>
+			<button type="button" class="botao" value="7" onclick="calcula(value);">7</button>
+			<button type="button" class="botao" value="8" onclick="calcula(value);">8</button>
+			<button type="button" class="botao" value="9" onclick="calcula(value);">9</button>
+			<button type="button" class="botao opera" value="/" onclick="calcula(value);">&#247;</button>
+			<button type="button" class="botao opera" value="(" onclick="calcula(value);">(</button>
+			<button class="botao reset" type="reset" value="C">C</button><br>	
+			<button type="button" class="botao" value="4" onclick="calcula(value);">4</button>
+			<button type="button" class="botao" value="5" onclick="calcula(value);">5</button>
+			<button type="button" class="botao" value="6" onclick="calcula(value);">6</button>
+			<button type="button" class="botao opera" value="*" onclick="calcula(value);">x</button>
+			<button type="button" class="botao opera" value=")" onclick="calcula(value);">)</button>
+			<button type="button" class="botao opera" onclick="raiz();">&#8730;</button><br>
+			<button type="button" class="botao" value="1" onclick="calcula(value);">1</button>
+			<button type="button" class="botao" value="2" onclick="calcula(value);">2</button>
+			<button type="button" class="botao" value="3" onclick="calcula(value);">3</button>
+			<button type="button"class="botao opera"  value="-" onclick="calcula(value);">-</button>
+			<button type="button"class="botao opera" onclick="quadrado();">y&#178;</button>
+			<button type="button" class="botao opera" onclick="log();">log</button><br>
+			<button type="button" class="botao" value="." onclick="calcula(value);">.</button>
+			<button type="button" class="botao"  value="0" onclick="calcula(value);">0</button>
+			<button type="button"class="botao opera"  value="=" onclick="resul();">=</button>
+			<button type="button" class="botao opera" value="+" onclick="calcula(value);">+</button>
+			<button type="button"class="botao opera" onclick="cubo();">y&#179;</button>
+			<button type="button" class="botao opera" value="3.14159265359" onclick="calcula(value);">&#960;</button><br>
+		</form>
+	</div>
+	<footer>
+		Desenvolvido por Mateus Vinicius da Silva &copy;
+	</footer>
+<script type="text/javascript" src="calc.js"></script>
+</body>
+</html>
