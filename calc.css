@@ -1,0 +1,134 @@
+*{
+	margin-left: 0;
+}
+body{
+	background-image:url('fundo.jpg');
+}
+.corpo{
+	margin-top: 145px;
+	border: 3.5px ridge darkred;
+	height: 350px;
+	width: 420px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	background-color: lightgrey;
+	box-shadow: 0 7px 0 darkred, 0 0.5em 0 darkred, 0 12px 12px darkred;
+}
+.visor{
+	font-size: 25px;
+	text-align: right;
+	height:38px;
+	width:366px;
+	margin-top: 18px;
+	margin-bottom: 16px;
+	border: 2px solid black;
+	border-radius: 5px;
+	font-family: 'Orbitron', sans-serif;
+}
+.botao{
+	border: outset silver;
+	font-weight: bold;
+	height: 50px;
+	width: 50px;
+	margin-top: 10.5px;
+	margin-right: 5.25px;
+	margin-left: 5.25px;
+	cursor: pointer;
+	background-color: silver;
+	box-shadow:0 5px 0 	#708090;
+}
+.botao:hover{
+	background-color: darkgray;
+	box-shadow:0 5px 0 #696969;
+}
+.botao:active{
+	background-color: #696969;
+	position: relative;
+	top:5px;
+}
+.reset:hover{
+	background-color: #cc0000;
+	box-shadow:0 5px 0 darkred;
+}
+.reset:active{
+	background-color: darkred;
+}
+.opera:hover{
+	background-color: #0003cc;
+	box-shadow:0 5px 0 #00014c;
+}
+.opera:active{
+	background-color: #00014c;
+}
+.reset{
+	border: outset red;
+	background-color: red;
+	color:white;
+	box-shadow:0 5px 0 darkred;
+}
+.opera{
+	border: outset blue;
+	box-shadow:0 5px 0 #00014c;
+	background-color: blue;
+	color:white;
+}
+footer{
+	position: absolute;
+	bottom: 0;
+	background-color: black;
+	color:white;
+	width: 100%;
+	height: 55px;
+	font-size: 30px;
+	font-family: 'Orbitron', sans-serif;
+	text-align: right;
+	text-shadow: 4px 4px 8px red;
+}
+@media only screen and (max-width: 760px) {
+	.corpo{
+			margin-top: 100px;
+			height: 300px;
+			width: 100%;
+		}
+	.botao{
+			border: outset silver;
+			font-weight: bold;
+			height: 42px;
+			width: 42px;
+			margin-top: 8.5px;
+			margin-right: 4.25px;
+	}
+	.visor{
+		width: 80%
+	}
+	footer{
+		position: fixed;
+	}
+}
+@media only screen and (max-width: 330px) {
+	.corpo{
+			margin-top: 80px;
+			height: 300px;
+			width: 100%;
+		}
+	.botao{
+			border: outset silver;
+			font-weight: bold;
+			height: 38px;
+			width: 38px;
+			margin-top: 8.5px;
+			margin-right: 4.25px;
+	}
+	.visor{
+		width: 80%
+	}
+	footer{
+		position: fixed;
+	}
+}
+/** Bloqueio do Banner**/
+div[style="text-align: right;position: fixed;z-index:9999999;bottom: 0; width: 100%;cursor: pointer;line-height: 0;"]{
+    display:none;
+    
+}
